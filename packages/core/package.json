@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./dist/murrui.umd.js",
   "module": "./dist/murrui.es.js",
-  "types": "./dist/shared/ui/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -13,18 +13,17 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
-    "build": "npm run type-check && npm run build:only && npm run build:types",
+    "build": "npm run type-check && npm run build:only",
     "build:only": "vite build --",
-    "build:types": "vue-tsc -p tsconfig.build.json --emitDeclarationOnly",
     "type-check": "vue-tsc --build",
     "prepack": "npm run build"
   },
   "exports": {
+    "./style.css": "./dist/core.css",
     ".": {
       "import": "./dist/murrui.es.js",
-      "types": "./dist/shared/ui/index.d.ts"
-    },
-    "./style.css": "./dist/core.css"
+      "types": "./dist/index.d.ts"
+    }
   },
   "peerDependencies": {
     "vue": "^3.5.22"
@@ -39,6 +38,7 @@
     "tailwindcss": "^4.1.14",
     "typescript": "~5.9.0",
     "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4",
     "vue-tsc": "^3.1.0"
   }
 }
