@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply w-full h-screen;
+    @apply bg-zinc-50;
+  }
+
+  body, #app {
+    @apply w-full h-full;
+  }
+}
