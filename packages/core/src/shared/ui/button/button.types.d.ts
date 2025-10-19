@@ -1,5 +1,10 @@
+export type ButtonSeverity = 'primary' | 'secondary' | 'success' | 'info' | 'warn' | 'help' | 'danger'
+export type ButtonVariant = 'default' | 'text' | 'outlined'
+
 export interface ButtonPropsType {
   label?: string
+  severity?: ButtonSeverity
+  variant?: ButtonVariant
 }
 
 export interface ButtonEmitsType {

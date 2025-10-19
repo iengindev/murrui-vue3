@@ -1,3 +1,4 @@
 import '@/app/assets/styles/main.style.css'
 
-export { UIButton, type ButtonPropsType, type ButtonEmitsType } from './button'
+export { UIButton } from './button'
+export type { ButtonPropsType, ButtonEmitsType, ButtonSeverity, ButtonVariant } from './button'
