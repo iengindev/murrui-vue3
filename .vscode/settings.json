@@ -6,4 +6,5 @@
     "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig"
   },
   "css.customData": [".vscode/tailwindcss.json"],
+  "css.validate": false,
 }
