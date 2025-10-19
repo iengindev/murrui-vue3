@@ -1,8 +1,16 @@
-import { defineComponent } from 'vue'
+import './button.style.css'
 
-export default defineComponent(() => {
+import { defineComponent, type SetupContext } from 'vue'
+
+import type { ButtonPropsType, ButtonEmitsType } from './button.types'
+
+export default defineComponent((props: ButtonPropsType, ctx: SetupContext<ButtonEmitsType>) => {
   return () => (
     <>
     </>
   )
+}, {
+  props: [
+    'label'
+  ]
 })
