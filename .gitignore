@@ -27,3 +27,5 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+murrui-core-*.tgz
