@@ -20,12 +20,15 @@ export default defineComponent(() => {
         </div>
 
         <div class="inline-flex flex-col gap-2 p-4">
-          <h1 class="">Button variant: default 'Default'</h1>
+          <h1 class="">Button variant: 'Text'</h1>
           <div class="flex flex-nowrap items-center gap-2">
-            <UIButton label='Submit'/>
             <UIButton label='Submit' variant='text'/>
-            <UIButton label='Submit' variant='outlined'/>
-            <UIButton label='Submit' variant='link'/>
+            <UIButton label='Submit' severity='secondary' variant='text'/>
+            <UIButton label='Submit' severity='success' variant='text'/>
+            <UIButton label='Submit' severity='info' variant='text'/>
+            <UIButton label='Submit' severity='warn' variant='text'/>
+            <UIButton label='Submit' severity='help' variant='text'/>
+            <UIButton label='Submit' severity='danger' variant='text'/>
           </div>
         </div>
       </div>
