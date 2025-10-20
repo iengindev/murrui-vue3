@@ -25,6 +25,7 @@ export default defineComponent(() => {
             <UIButton label='Submit'/>
             <UIButton label='Submit' variant='text'/>
             <UIButton label='Submit' variant='outlined'/>
+            <UIButton label='Submit' variant='link'/>
           </div>
         </div>
       </div>
