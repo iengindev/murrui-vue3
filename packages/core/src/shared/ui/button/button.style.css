@@ -16,6 +16,11 @@
     @apply mui:leading-none
   }
 
+  /*
+    @severity
+    UIButton severity types:
+  */
+
   .mui__bs-primary {
     @apply mui:bg-zinc-800;
     @apply mui:hover:bg-zinc-700 mui:active:bg-zinc-700 mui:focus:bg-zinc-700;
@@ -77,5 +82,13 @@
 
   .mui__bs-danger .label {
     @apply mui:text-zinc-50;
+  }
+
+  /*
+    @variant
+    UIButton variant types:
+  */
+
+  .mui-bv-default {
   }
 }
