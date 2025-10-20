@@ -16,6 +16,20 @@ export const useButtonService = (props: ButtonPropsType, ctx: SetupContext<Butto
           }
         </span>
       )
+    },
+
+    setButtonClasses: (): string[] => {
+      let classes: string[] = ['m-button']
+
+      if (props.severity) {
+        classes.push('m-button-' + props.severity)
+      }
+
+      if (props.variant) {
+        classes.push('m-button-' + props.variant)
+      }
+
+      return classes
     }
   },
 

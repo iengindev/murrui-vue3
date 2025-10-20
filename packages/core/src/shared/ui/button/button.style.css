@@ -1,7 +1,7 @@
 @reference "@/app/assets/styles/main.style.css";
 
 @layer components {
-  .mui__button {
+  .m-button {
     @apply mui:inline-flex mui:items-center mui:justify-center;
     @apply mui:px-4 mui:py-2.5;
     @apply mui:cursor-pointer;
@@ -9,86 +9,35 @@
     @apply mui:overflow-hidden;
     @apply mui:rounded-sm;
     @apply mui:duration-150;
+    @apply mui:bg-zinc-800;
   }
 
-  .mui__button .label {
-    @apply mui:font-[400] mui:text-base;
+  .m-button .label {
+    @apply mui:font-[400] mui:text-base mui:text-zinc-50;
     @apply mui:leading-none
   }
 
-  /*
-    @severity
-    UIButton severity types:
+  /* 
+    @severity types:
   */
 
-  .mui__bs-primary {
-    @apply mui:bg-zinc-800;
-    @apply mui:hover:bg-zinc-700 mui:active:bg-zinc-700 mui:focus:bg-zinc-700;
-  }
-
-  .mui__bs-primary .label {
-    @apply mui:text-zinc-50;
-  }
-
-  .mui__bs-secondary {
-    @apply mui:bg-zinc-100;
-    @apply mui:hover:bg-zinc-200 mui:active:bg-zinc-200 mui:focus:bg-zinc-200;
-  }
-
-  .mui__bs-secondary .label {
-    @apply mui:text-zinc-800;
-  }
-
-  .mui__bs-success {
+  .m-button-success {
     @apply mui:bg-green-500;
-    @apply mui:hover:bg-green-600 mui:active:bg-green-600 mui:focus:bg-green-600;
   }
 
-  .mui__bs-success .label {
+  .m-button-success .label {
     @apply mui:text-zinc-50;
   }
 
-  .mui__bs-info {
-    @apply mui:bg-blue-500;
-    @apply mui:hover:bg-blue-600 mui:active:bg-blue-600 mui:focus:bg-blue-600;
-  }
-
-  .mui__bs-info .label {
-    @apply mui:text-zinc-50;
-  }
-
-  .mui__bs-warn {
-    @apply mui:bg-orange-500;
-    @apply mui:hover:bg-orange-600 mui:active:bg-orange-600 mui:focus:bg-orange-600;
-  }
-
-  .mui__bs-warn .label {
-    @apply mui:text-zinc-50;
-  }
-
-  .mui__bs-help {
-    @apply mui:bg-indigo-500;
-    @apply mui:hover:bg-indigo-600 mui:active:bg-indigo-600 mui:focus:bg-indigo-600;
-  }
-
-  .mui__bs-help .label {
-    @apply mui:text-zinc-50;
-  }
-
-  .mui__bs-danger {
-    @apply mui:bg-red-500;
-    @apply mui:hover:bg-red-600 mui:active:bg-red-600 mui:focus:bg-red-600;
-  }
-
-  .mui__bs-danger .label {
-    @apply mui:text-zinc-50;
-  }
-
-  /*
-    @variant
-    UIButton variant types:
+  /* 
+    @variant types:
   */
 
-  .mui-bv-default {
+  .m-button-text {
+    @apply mui:bg-transparent;
+  }
+
+  .m-button-text .label {
+    @apply mui:text-zinc-800;
   }
 }

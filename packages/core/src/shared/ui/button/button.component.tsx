@@ -11,7 +11,7 @@ export default defineComponent((props: ButtonPropsType, ctx: SetupContext<Button
 
   return () => (
     <>
-      <button { ...ctx.attrs } class={["mui__button", `mui__bs-${props.severity ?? 'primary'}`, `mui__bv-${props.variant ?? 'default'}`]} onClick={actions.handleClick}>
+      <button { ...ctx.attrs } class={methods.setButtonClasses()} onClick={actions.handleClick}>
         {
           methods.getValue()
         }
